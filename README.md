@@ -1,1 +1,1 @@
-# JavaScript-online-lernen
+# JavaScript online lernen
