@@ -39,9 +39,20 @@ description: JavaScript online lernen
 <p>Speichern Sie die Datei "Hallo-Welt.html" nach Ihren Änderungen wieder und wechseln Sie zum Browser. Hier sollte noch die Datei "Hallo-Welt.html" geöffnet sein. Aktualisieren Sie die Ansicht (<a href="/beispiele/hallo-welt-2.html" target="_blank">Beispiel</a>). Sie sehen nun ein Dialogfenster mit dem Text "Hallo Welt". Je nach Browser kann dieses Fenster immer etwas anders aussehen.</p>
 <p><figure><img src="/beispiele/hallo-welt-2.png" alt="Dialogfenster - Hallo Welt"><figcaption>JavaScript-Dialogfenster (hier im Safari auf einem Mac)</figcaption></figure></p>
 <p>Nachdem wir nun unser erstes Erfolgserlebnis hatten, wollen wir uns gemeinsam den neu hinzugekommenen Quellcode etwas genauer ansehen.</p>
-<p>Zunächst ist das <code>script</code>-Tag hinzugekommen. Dieses Tag sagt dem Browser, dass nun der Quellcode einer Scriptsprache folgt. Standardmäßig nimmt der Browser an dieser Stelle an, dass es sich um JavaScript handelt. Der Vollständigkeit halber geben wir aber über das <code>type</code>-Attribut beim Startelement die Sprache mit dem Wert <code>text/javascript</code> explizit an. Sie können beliebig viele <code>script</code>-Bereiche in Ihre HTML-Datei einbauen und so beliebig zwischen HTML-Code und JavaScript-Code wechseln.</p>
+<p>Zunächst ist das <code>script</code>-Tag hinzugekommen. Dieses Tag sagt dem Browser, dass nun der Quellcode einer Scriptsprache folgt. Standardmäßig nehmen die meisten Browser an dieser Stelle an, dass es sich um JavaScript handelt. Sicherheitshalber geben wir über das <code>type</code>-Attribut beim Startelement die Sprache mit dem Wert <code>text/javascript</code> explizit an, da man nicht immer davon ausgehen kann, dass JavaScript die Standard-Scriptsprache für das <code>script</code>-Tag gesetzt ist.</p>
+<hr>
+<h4>Hinweis</h4>
+<p>Früher wurde die Scriptsprache über das Attribut <code>language</code> angegeben:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt");
+</script>
+{% endhighlight %}
+<p>Dies ist jedoch <strong>falsch</strong>. Durch den HTML-Standard wird die Angabe des <code>type</code>-Attributs vorgegeben und muss von Ihnen auch genau so verwendet werden.</p>
+<hr>
+<p>Sie können beliebig viele <code>script</code>-Bereiche in Ihre HTML-Datei einbauen und so beliebig zwischen HTML-Code und JavaScript-Code wechseln.</p>
 <p>Zwischen dem Start- und dem Endelement des <code>script</code>-Tags steht der eigentliche JavaScript-Code, der in unserem Beispiel für die Ausgabe des Dialogfensters verantwortlich ist.</p>
 {% highlight javascript %}
 alert("Hallo Welt");
 {% endhighlight %}
-<p>Mit dieser Zeile JavaScript-Code sagen Sie dem Computer, dass er ein Dialogfenster öffnen soll (<a href="/Referenz/Objekte/window/alert/"><code>alert()</code></a>) und darin den Text "<code>Hallo Welt</code>" ausgeben soll.</p>
+<p>Mit dieser Zeile JavaScript-Code sagen Sie dem Computer, dass er ein Dialogfenster öffnen soll (<a href="/Referenz/Objekte/window/alert/"><code>alert()</code></a>) und darin den Text "<code>Hallo Welt</code>" ausgeben soll. <code>alert()</code> ist dabei der Methodenaufruf für die Anzeige eines Dialogfensters. Der Text, der in diesem Dialogfenster angezeigt werden soll, wird als Parameter übergeben. Die Anführungszeichen bei diesem Parameter zeigen in unserem Fall, dass es sich um eine Zeichenkette handelt und sie werden nicht mit ausgegeben. Sie können hier sowohl die doppelten Anführungszeichen (<code>"Hallo Welt"</code>) oder einfache Anführungszeichen (<code>'Hallo Welt'</code>) verwenden.</p>
