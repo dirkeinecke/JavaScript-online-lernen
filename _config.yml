@@ -1,5 +1,7 @@
 encoding: utf-8
 
+baseurl: "http://www.javascript-online-lernen.de"
+
 syntax-highlighting:
   enabled : true
   css: syntax.css
