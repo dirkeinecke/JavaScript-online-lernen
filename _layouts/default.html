@@ -2,11 +2,13 @@
 <html class="no-js" lang="de">
 	{% include head.html %}
 	<body>
-		{% include header.html %}
-		<main class="container">
-			{{ content }}
-		</main>
-		{% include footer.html %}
+		<div class="container">
+			{% include header.html %}
+			<main>
+				{{ content }}
+			</main>
+			{% include footer.html %}
+		</div>
 		<script src="https://fastcdn.org/jQuery/2.1.4/jquery.min.js"></script>
 	</body>
 </html>
