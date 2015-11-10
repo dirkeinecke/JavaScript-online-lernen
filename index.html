@@ -79,3 +79,23 @@ alert("Hallo Welt");
 	alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
 </script>
 {% endhighlight %}
+<p>Auch die Einrückungen der einzelnen Zeilen sind bei JavaScript rein optional und beeinflussen die Funktionalität in keinster Weise. Die beiden folgenden Quellcodebeispiele sind also völlig ligitim:</p>
+<div class="row">
+<div class="col-xxs-12 col-xs-12 col-s-6 col-m-6 col-l-6">
+{% highlight html %}
+<script language="JavaScript">
+alert("Hallo Welt!");
+alert("Das ist JavaScript.");
+alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}	
+</div>
+<div class="col-xxs-12 col-xs-12 col-s-6 col-m-6 col-l-6">
+{% highlight html %}
+<script language="JavaScript">
+alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}
+</div>
+</row>
+<p>Sie sollten aber in Ihrem eigenen Interesse und im Interesse der Programmierer, die eventuell später mit Ihrem Quellcode arbeiten müssen, immer mit Einrückungen arbeiten und <strong>nicht</strong> alles hintereinder weg in eine Zeile schreiben. Dadurch wird Ihr Quellcode sehr viel übersichtlicher und Sie finden sich schneller und einfacher zurecht.</p>
