@@ -65,3 +65,17 @@ alert("Hallo Welt");
 </script>
 {% endhighlight %}
 <p>Neben der Tatsache, dass dies funktioniert haben Sie aber sicher bemerkt, dass man sowas nicht unbedingt auf einer echten Website machen sollte. Zu viele Dialogboxen nerven doch sehr.</p>
+<p>Doch wir können anhand dieses Beispiels noch weitere Eigenschaften von JavaScript beobachten. Wenn man die Seite mit den drei aufeinander folgenden Aufrufen der <code>alert</code>-Methode im Browser öffnet, dann kann man beobachten, dass der JavaScript-Code Zeile für Zeile abgearbeitet wird. Zunächst wird die Dialogbox mit dem Text <code>Hallo Welt!</code> angezeigt und die weitere Verarbeitung gestoppt. Erst wenn Sie auf den OK-Button dieser Dialogbox klicken, wird die Verarbeitung des JavaScript-Codes fortgesetzt und die nächste Dialogbox angezeigt usw. Auch sehen wir, dass am Ende einer jeden Zeile ein Semikolon steht. Dieses Semikolon trennt die einzelnen Methodenaufrufe voneinander ab. Innerhalb von JavaScript ist dieses Semikolon aber nicht zwingend notwendig. So könnte unser Quellcode zum Besipiel aus so aussehen:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt!")
+	alert("Das ist JavaScript.")
+	alert("Das ist eine Dialogbox.")
+</script>
+{% endhighlight %}
+<p>Das Semikolon ist nur dann verpflichtend vorgeschrieben, wenn mehrere Befehle in einer Zeile hintereinander stehen, so wie es das folgende Beispiel zeigt:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}
