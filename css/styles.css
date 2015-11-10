@@ -5,8 +5,7 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-weight: 300;
 }
 
@@ -17,6 +16,10 @@ header {
 
 p {
   line-height: 24px;
+}
+
+.alert h4 {
+  font-weight: 500;
 }
 
 footer {
