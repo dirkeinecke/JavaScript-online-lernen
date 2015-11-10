@@ -1,0 +1,95 @@
+---
+layout: default
+title: JavaScript online lernen
+description: JavaScript online lernen
+---
+<h2>Erste Schritte in JavaScript</h2>
+<p>In diesem Kapitel lernen Sie die grundlegenden Schritte für das Erstellen und Ausführen von JavaScript-Programmen kennen. Besonderes Augenmerkt wird dabei auf das Einbinden von JavaScript in eine HTML-Datei gelegt. Diese HTML-Datei wird dann im Browser geöffnet und der JavaScript-Code wird durch den Browser ausgeführt.</p>
+<h3>HTML-Datei mit JavaScript-Code</h3>
+<p>In diesem ersten Beispiel wird gezeigt, wie man den Text "<code>Hallo Welt</code>" mittels JavaScript im Browser anzeigen kann.</p>
+<p>Im Ersten Schritt benötigen wir dazu das Grundgerüst einer einfacher HTML-Datei. Erstellen Sie dazu in Ihrem Texteditor eine neue Datei und fügen den nachfolgenden Quelltext ein.</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+{% endhighlight %}
+<p>Speichern Sie die Datei unter dem Dateinamen "hallo-welt.html" ab und rufen Sie nun die Datei in Ihrem Browser auf (<a href="/beispiele/hallo-welt-1.html" target="_blank">Beispiel</a>). Ausser eine weiße Seite werden Sie aber an dieser Stelle noch nichts zu sehen bekommen. Lassen Sie uns also zum nächsten Schritt gehen.</p>
+<p>Im zweiten Schritt erweitern wir nun dieses HTML-Grundgerüst mit dem JavaScript-Code, der im Browser ein Dialogfenster mit dem Text "Hallo Welt" anzeigt. Dies ist zwar nicht sonderlich spektakulär, zeigt Ihnen aber sehr anschaulich die Grundprinzipien.</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			alert("Hallo Welt");
+		</script>
+	</body>
+</html>
+{% endhighlight %}
+<p>Speichern Sie die Datei "Hallo-Welt.html" nach Ihren Änderungen wieder und wechseln Sie zum Browser. Hier sollte noch die Datei "Hallo-Welt.html" geöffnet sein. Aktualisieren Sie die Ansicht (<a href="/beispiele/hallo-welt-2.html" target="_blank">Beispiel</a>). Sie sehen nun ein Dialogfenster mit dem Text "Hallo Welt". Je nach Browser kann dieses Fenster immer etwas anders aussehen.</p>
+<p><figure><img src="/beispiele/hallo-welt-2.png" alt="Dialogfenster - Hallo Welt"><figcaption>JavaScript-Dialogfenster (hier im Safari auf einem Mac)</figcaption></figure></p>
+<p>Nachdem wir nun unser erstes Erfolgserlebnis hatten, wollen wir uns gemeinsam den neu hinzugekommenen Quellcode etwas genauer ansehen.</p>
+<p>Zunächst ist das <code>script</code>-Tag hinzugekommen. Dieses Tag sagt dem Browser, dass nun der Quellcode einer Scriptsprache folgt. Standardmäßig nehmen die meisten Browser an dieser Stelle an, dass es sich um JavaScript handelt. Sicherheitshalber geben wir über das <code>type</code>-Attribut beim Startelement die Sprache mit dem Wert <code>text/javascript</code> explizit an, da man nicht immer davon ausgehen kann, dass JavaScript die Standard-Scriptsprache für das <code>script</code>-Tag gesetzt ist.</p>
+<div class="alert" role="alert">
+<h4>Hinweis</h4>
+<p>Früher wurde die Scriptsprache über das Attribut <code>language</code> angegeben:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt");
+</script>
+{% endhighlight %}
+<p>Dies ist jedoch <strong>falsch</strong>. Durch den HTML-Standard wird die Angabe des <code>type</code>-Attributs vorgegeben und muss von Ihnen auch genau so verwendet werden.</p>
+</div>
+<p>Sie können beliebig viele <code>script</code>-Bereiche in Ihre HTML-Datei einbauen und so beliebig zwischen HTML-Code und JavaScript-Code wechseln.</p>
+<p>Zwischen dem Start- und dem Endelement des <code>script</code>-Tags steht der eigentliche JavaScript-Code, der in unserem Beispiel für die Ausgabe des Dialogfensters verantwortlich ist.</p>
+{% highlight javascript %}
+alert("Hallo Welt");
+{% endhighlight %}
+<p>Mit dieser Zeile JavaScript-Code sagen Sie dem Computer, dass er ein Dialogfenster öffnen soll (<a href="/Referenz/Objekte/window/alert/"><code>alert()</code></a>) und darin den Text "<code>Hallo Welt</code>" ausgeben soll. <code>alert()</code> ist dabei der Methodenaufruf für die Anzeige eines Dialogfensters. Der Text, der in diesem Dialogfenster angezeigt werden soll, wird als Parameter übergeben. Die Anführungszeichen bei diesem Parameter zeigen in unserem Fall, dass es sich um eine Zeichenkette handelt und sie werden nicht mit ausgegeben. Sie können hier sowohl die doppelten Anführungszeichen (<code>"Hallo Welt"</code>) oder einfache Anführungszeichen (<code>'Hallo Welt'</code>) verwenden.</p>
+<p>Innerhalb eines <code>script</code>-Blocks können Sie beliebig viel JavaScript-Code schreiben. Sie sind also nicht auf den Aufruf einer Methode beschränkt. Das folgende <a href="/beispiele/hallo-welt-3.html" target="_blank">Beispiel</a> zeigt Ihnen, wie Sie mehrfach die <code>alert</code>-Methode hintereinander aufrufen können.</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt!");
+	alert("Das ist JavaScript.");
+	alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}
+<p>Neben der Tatsache, dass dies funktioniert haben Sie aber sicher bemerkt, dass man sowas nicht unbedingt auf einer echten Website machen sollte. Zu viele Dialogboxen nerven doch sehr.</p>
+<p>Doch wir können anhand dieses Beispiels noch weitere Eigenschaften von JavaScript beobachten. Wenn man die Seite mit den drei aufeinander folgenden Aufrufen der <code>alert</code>-Methode im Browser öffnet, dann kann man sehen, dass der JavaScript-Code Zeile für Zeile abgearbeitet wird. Zunächst wird die Dialogbox mit dem Text <code>Hallo Welt!</code> angezeigt und die weitere Verarbeitung gestoppt. Erst wenn Sie auf den OK-Button dieser Dialogbox klicken, wird die Verarbeitung des JavaScript-Codes fortgesetzt und die nächste Dialogbox angezeigt usw. Auch sehen wir, dass am Ende einer jeden Zeile ein Semikolon steht. Dieses Semikolon trennt die einzelnen Methodenaufrufe voneinander ab. Innerhalb von JavaScript ist dieses Semikolon aber nicht zwingend notwendig. So könnte unser Quellcode zum Besipiel aus so aussehen:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt!")
+	alert("Das ist JavaScript.")
+	alert("Das ist eine Dialogbox.")
+</script>
+{% endhighlight %}
+<p>Das Semikolon ist nur dann verpflichtend vorgeschrieben, wenn mehrere Befehle in einer Zeile hintereinander stehen, so wie es das folgende Beispiel zeigt:</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}
+<p>Auch die Einrückungen der einzelnen Zeilen sind bei JavaScript rein optional und beeinflussen die Funktionalität in keinster Weise. Die beiden folgenden Quellcodebeispiele sind also völlig ligitim:</p>
+{% highlight html %}
+<script language="JavaScript">
+alert("Hallo Welt!");
+alert("Das ist JavaScript.");
+alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}	
+{% highlight html %}
+<script language="JavaScript">
+alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
+</script>
+{% endhighlight %}
+<p>Sie sollten aber in Ihrem eigenen Interesse und im Interesse der Programmierer, die eventuell später mit Ihrem Quellcode arbeiten müssen, immer mit Einrückungen arbeiten und <strong>nicht</strong> alles hintereinder weg in eine Zeile schreiben. Inhaltlich zusammengehörige Block können Sie durch Leerzeilen voneinander trennen. Dadurch wird Ihr Quellcode sehr viel übersichtlicher und Sie finden sich schneller und einfacher zurecht.</p>
