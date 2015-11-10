@@ -93,3 +93,17 @@ alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbo
 </script>
 {% endhighlight %}
 <p>Sie sollten aber in Ihrem eigenen Interesse und im Interesse der Programmierer, die eventuell später mit Ihrem Quellcode arbeiten müssen, immer mit Einrückungen arbeiten und <strong>nicht</strong> alles hintereinder weg in eine Zeile schreiben. Inhaltlich zusammengehörige Block können Sie durch Leerzeilen voneinander trennen. Dadurch wird Ihr Quellcode sehr viel übersichtlicher und Sie finden sich schneller und einfacher zurecht.</p>
+<p>Neben der bisher gezeigten Ausgabe von Zeichenketten kann man mit der <code>alert</code>-Methode auch Zahlen ausgeben. Das folgende Beispiel zeigt die Ausgabe der Zahl 32.</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert(32);
+</script>
+{% endhighlight %}
+<p>Beachten Sie hierbei, dass der Wert des Parameters <strong>nicht</strong> in Anführungszeichen steht. Würden Sie auch hier Anführungszeichen setzen, dann würde <code>32</code> nicht als Zahl sondern als Zeichenkette interpretiert werden. Dies macht bei diesem einfachen Beispiel zwar keinen Unterschied, aber schon beim nächsten Beispiel ist der Unterschied sehr deutlich.</p>
+<p>Der parameter muss aber nicht zwangsläufig nur aus einer einzelnen Zahl bestehen. Auch Berechnungen sind hier möglich. Das folgende Beispiel zeigt dies.</p>
+{% highlight html %}
+<script language="JavaScript">
+	alert(1 + 2 + 3);
+</script>
+{% endhighlight %}
+<p>Dadurch wird die Berechnung <code>1 + 2 + 3</code> durchgeführt und das Ergebnis <code>6</code> in einem Dialogfenster ausgegeben. Würden Sie hier den Wert des Parameters in Anführungszeichen setzen (so: <code>"1 + 2 + 3"</code>), dann würde nicht die Berechnung durchgeführt werden, sondern es würde die Zeichenkette <code>1 + 2 + 3</code> im Dialogfenster ausgegeben werden.</p>
