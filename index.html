@@ -39,3 +39,9 @@ description: JavaScript online lernen
 {% endhighlight %}
 <p>Speichern Sie die Datei "Hallo-Welt.html" nach Ihren Änderungen wieder und wechseln Sie zum Browser. Hier sollte noch die Datei "Hallo-Welt.html" geöffnet sein. Aktualisieren Sie die Ansicht (<a href="/beispiele/hallo-welt-2.html" target="_blank">Beispiel</a>). Sie sehen nun ein Hinweisfenster mit dem Text "Hallo Welt". Je nach Browser kann dieses Fenster immer etwas anders aussehen.</p>
 <p><figure><img src="/beispiele/hallo-welt-2.png" alt="Hinweisfenster - Hallo Welt"><figcaption>JavaScript-Hinweisfenster (hier im Safari auf einem Mac)</figcaption></figure></p>
+<p>Nachdem wir nun unser erstes Erfolgserlebnis hatten, wollen wir uns gemeinsam den neu hinzugekommenen Quellcode etwas genauer ansehen.</p>
+<p>Zunächst ist das <code>script</code>-Tag hinzugekommen. Dieses Tag sagt dem Browser, dass nun der Quellcode einer Scriptsprache folgt. Standardmäßig nimmt der Browser an dieser Stelle an, dass es sich um JavaScript handelt. Der Vollständigkeit halber geben wir aber über das <code>type</code>-Attribut beim Startelement die Sprache mit dem Wert <code>text/javascript</code> explizit an.</p>
+<p>Zwischen dem Start- und dem Endelement des <code>script</code>-Tags steht der eigentliche JavaScript-Code, der in unserem Beispiel für die Ausgabe des Hinweisfensters verantwortlich ist.</p>
+{% highlight javascript %}
+alert("Hallo Welt");
+{% endhighlight %}
