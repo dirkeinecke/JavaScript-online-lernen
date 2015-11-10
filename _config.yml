@@ -1,5 +1,9 @@
 encoding: utf-8
 
+syntax-highlighting:
+  enabled : true
+  css: syntax.css
+
 defaults:
   -
     scope:
