@@ -1,0 +1,27 @@
+---
+layout: default
+title: JavaScript-Referenz - Objekte/window/alert
+description: JavaScript-Referenz - Objekte/window/alert
+---
+<h1>{{ page.title }}</h1>
+<p>Die Methode <code>alert()</code> gibt ein Dialogfenster aus. Sie besitzt einen möglichen Parameter der ein Text, eine Zahl oder ein Objekt sein kann.</p>
+<h2>Beispiel 1 - Text ausgeben</h2>
+{% highlight javascript %}
+alert("Hallo Welt");
+{% endhighlight %}
+<h2>Beispiel 2 - Zahl ausgeben</h2>
+{% highlight javascript %}
+alert(123);
+{% endhighlight %}
+<p>Neben festen Zeichenketten und Zahlen können Sie der <code>alert()</code>-Methode auch Variablen übergeben. In einem Solchen Fall wird der Wert der Variablen ausgegeben.</p>
+<h2>Beispiel 3 - Variable übergeben</h2>
+{% highlight javascript %}
+var zeichenkette = "Hallo Welt";
+alert(zeichenkette);
+{% endhighlight %}
+<h2>Hinweise</h2>
+<ul>
+	<li>Die <code>alert()</code>-Methode wandelt intern den übergebenen Wert immer in eine Zeichenkette um.</li>
+	<li>Der Rückgabewert ist immer <code>undefined</code>.</li>
+	<li>Das Dialogfenster kann je nach Betriebssystem und Browser unterschiedlich aussehen.</li>
+</ul>
