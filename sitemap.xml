@@ -14,8 +14,6 @@
     {% endif %}
   {% endfor %}
 
-
-
 	<url>
 		<loc>{{ site.baseurl }}</loc>
 		<lastmod>2015-11-11</lastmod>
