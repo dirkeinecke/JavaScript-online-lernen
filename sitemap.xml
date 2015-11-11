@@ -62,4 +62,10 @@
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
+	<url>
+		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Bilder-vorausladen/</loc>
+		<lastmod>2015-11-11</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
 </urlset>
