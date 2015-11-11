@@ -1,0 +1,16 @@
+---
+layout: default
+title: JavaScript online lernen - Tipps & Tricks - Android-Gerät mit JavaScript erkennen
+description: JavaScript online lernen - Tipps & Tricks - Android-Gerät mit JavaScript erkennen
+---
+<h2>Tipps &amp; Tricks</h2>
+<h3>Android-Gerät mit JavaScript erkennen</h3>
+<p>Das folgende Beispiel zeigt, wie man ein Android-Gerät mit JavaScript erkennen kann.</p>
+{% highlight javascript %}
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf('android') > -1;
+
+if (isAndroid) {
+  alert('Hallo Android.');
+}
+{% endhighlight %}
