@@ -168,3 +168,19 @@ alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbo
 		<p><figure><a href="/Beispiele/Browsereinstellungen-JavaScript-Safari.png" data-modal-title="JavaScript-Browsereinstellungen im Safari"><img src="/Beispiele/Browsereinstellungen-JavaScript-Safari.png" alt="Browsereinstellungen - JavaScript - Safari"></a><figcaption>JavaScript-Browsereinstellungen im Safari</figcaption></figure></p>
 	</div>
 </div>
+<p>Für den Fall, dass der Browser kein JavaScript ausführen darf, gibt es das <code>noscript</code>-Tag. Mit diesem Tag kann man zum Beispiel einen Hinweis unterbringen, dass für die Webseite JavaScript aktiviert sein muss.</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kein JavaScript im Browser verfügbar</title>
+	</head>
+	<body>
+		<form>
+			<input type="button" value="Klick mich!" onclick="alert('Hallo Welt')">
+			<noscript>Für diese Webseite muss JavaScript aktiviert sein.</noscript>
+		</form>
+	</body>
+</html>
+{% endhighlight %}
