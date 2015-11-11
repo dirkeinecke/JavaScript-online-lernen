@@ -7,7 +7,7 @@ syntax-highlighting:
   css: syntax.css
 
 gems:
-- jekyll-sitemap
+  - jekyll-sitemap
 
 defaults:
   -
