@@ -1,6 +1,6 @@
-body {
+* {
   font-family: "Droid Serif", "Times New Roman", Times, serif;
-  /*font-weight: 400;*/
+  font-weight: 400;
 }
 
 h1,
