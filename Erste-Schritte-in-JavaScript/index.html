@@ -59,7 +59,7 @@ alert("Hallo Welt");
 <h3>Mehrere Methodenaufrufe hintereinander</h3>
 <p>Innerhalb eines <code>script</code>-Blocks können Sie beliebig viel JavaScript-Code schreiben. Sie sind also nicht auf den Aufruf einer Methode beschränkt. Das folgende <a href="/Beispiele/hallo-welt-3.html" target="_blank">Beispiel</a> zeigt Ihnen, wie Sie mehrfach die <code>alert</code>-Methode hintereinander aufrufen können.</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 	alert("Hallo Welt!");
 	alert("Das ist JavaScript.");
 	alert("Das ist eine Dialogbox.");
@@ -69,7 +69,7 @@ alert("Hallo Welt");
 <h3>Eigenschaften von JavaScript</h3>
 <p>Doch wir können anhand dieses Beispiels noch weitere Eigenschaften von JavaScript beobachten. Wenn man die Seite mit den drei aufeinander folgenden Aufrufen der <code>alert</code>-Methode im Browser öffnet, dann kann man sehen, dass der JavaScript-Code Zeile für Zeile abgearbeitet wird. Zunächst wird die Dialogbox mit dem Text <code>Hallo Welt!</code> angezeigt und die weitere Verarbeitung gestoppt. Erst wenn Sie auf die OK-Schaltfläche dieser Dialogbox klicken, wird die Verarbeitung des JavaScript-Codes fortgesetzt und die nächste Dialogbox angezeigt usw. Auch sehen wir, dass am Ende einer jeden Zeile ein Semikolon steht. Dieses Semikolon trennt die einzelnen Methodenaufrufe voneinander ab. Innerhalb von JavaScript ist dieses Semikolon aber nicht zwingend notwendig. So könnte unser Quellcode zum Besipiel aus so aussehen:</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 	alert("Hallo Welt!")
 	alert("Das ist JavaScript.")
 	alert("Das ist eine Dialogbox.")
@@ -77,20 +77,20 @@ alert("Hallo Welt");
 {% endhighlight %}
 <p>Das Semikolon ist nur dann verpflichtend vorgeschrieben, wenn mehrere Befehle in einer Zeile hintereinander stehen, so wie es das folgende Beispiel zeigt:</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 	alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
 </script>
 {% endhighlight %}
 <p>Auch die Einrückungen der einzelnen Zeilen sind bei JavaScript rein optional und beeinflussen die Funktionalität in keinster Weise. Die beiden folgenden Quellcodebeispiele sind also völlig ligitim:</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 alert("Hallo Welt!");
 alert("Das ist JavaScript.");
 alert("Das ist eine Dialogbox.");
 </script>
 {% endhighlight %}	
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbox.");
 </script>
 {% endhighlight %}
@@ -98,14 +98,14 @@ alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbo
 <h3>Zahlen und einfache Berechnungen ausgeben</h3>
 <p>Neben der bisher gezeigten Ausgabe von Zeichenketten kann man mit der <code>alert</code>-Methode auch Zahlen ausgeben. Das folgende Beispiel zeigt die Ausgabe der Zahl 32.</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 	alert(32);
 </script>
 {% endhighlight %}
 <p>Beachten Sie hierbei, dass der Wert des Parameters <strong>nicht</strong> in Anführungszeichen steht. Würden Sie auch hier Anführungszeichen setzen, dann würde <code>32</code> nicht als Zahl sondern als Zeichenkette interpretiert werden. Dies macht bei diesem einfachen Beispiel zwar keinen Unterschied, aber schon beim nächsten Beispiel ist der Unterschied sehr deutlich.</p>
 <p>Der parameter muss aber nicht zwangsläufig nur aus einer einzelnen Zahl bestehen. Auch Berechnungen sind hier möglich. Das folgende Beispiel zeigt dies.</p>
 {% highlight html %}
-<script language="JavaScript">
+<script type="text/javascript">
 	alert(1 + 2 + 3);
 </script>
 {% endhighlight %}
@@ -133,4 +133,28 @@ alert("Hallo Welt!"); alert("Das ist JavaScript."); alert("Das ist eine Dialogbo
 <p>Schauen wir uns nun den Quelltext näher an. Zunächst haben wir ein <code>form</code>-Tag eingefügt. Dieses ist als umschließendes Tag für das darauf folgende <code>input</code>-Tag obligatorisch. Mit dem <code>input</code>-Tag wird die Schaltfläche erzeugt. Der für uns an dieser Stelle interessante Teil ist das Attribut <code>onclick</code>. Über dieses Attribut legen Sie den Event-Handler fest. Also das, was passieren soll, wenn man auf die Schaltfläche klickt (<code>onclick</code>). Als Wert das Attributs <code>onclick</code> geben Sie den JavaScript-Code an, der ausgeführt werden soll, wenn das Ereignis eintritt. In unserem Fall soll eine Dialogbox mit dem Text <code>Hallo Welt</code> angezeigt werden. Bei HTML-Tags muss der Wert von Attributen immer in Anführungszeichen stehen. Genauso wie bei JavaScript ist es hier egal, ob sie doppelte oder einfache Anführungszeichen verwenden. Da nun aber auch der Text der Dialogbox beim Aufruf der <code>alert</code>-Methode in Anführungszeichen stehen muss, muss man jeweils unterschiedliche Anführungszeichen verwenden. Sonst kann der Browser nicht erkennen, was alles zum Attributwert bzw. zum Text gehört. Sie können also auch die einfachen Anführungszeichen für die Attributwerte und die duppelten Anführungszeichen für den parameter der <code>alert</code>-Methode nutzen. Das folgende Beispiel zeigt dies.</p>
 {% highlight html %}
 <input type='button' value='Klick mich!' onclick='alert("Hallo Welt")'>
+{% endhighlight %}
+<h3>Kommentare</h3>
+<p>Genauso wie in HTML und anderen Programmiersprachen gibt es auch in JavaScript Kommentare. Diese dienen dazu, die Lesbarkeit Ihres Quelltextes zu verbessern. Haben Sie zum Beispiel eine Datei mit mehreren hundert Zeilen Code, dann ist es für Sie und andere Programmierer sehr hilfreich, wenn an einigen Stellen Hinweise stehen. Vom ausführenden Computer werden kommentare nicht beachtet. Er ignoriert sie einfach.</p>
+<p>JavaScript kennt einzeilige und mehrzeilige Kommentare. Schauen wir uns zunächst die einzeiligen Kommentare an. Sie werden durch zwei direkt aufeinander folgende Schrägstriche (<code>//</code>) eingeleitet und gehen dann bis zum Ende der Zeile. Einzeilige Kommentare können entweder allein in einer Zeile stehen ...</p>
+{% highlight html %}
+<script type="text/javascript">
+	// Ausgabe einer Dialogbox
+	alert("Hallo Welt");
+</script>
+{% endhighlight %}
+<p>... oder am Ende einer Zeile ...</p>
+{% highlight html %}
+<script type="text/javascript">
+	alert("Hallo Welt"); // Ausgabe einer Dialogbox
+</script>
+{% endhighlight %}
+<p>Mehrzeilige Kommentare beginnen mit der Zeichenfolge <code>/*</code> und enden mit der Zeichenfolge <code>*/</code>. Der folgende Code soll Ihnen dazu als Beispiel dienen.</p>
+{% highlight html %}
+<script type="text/javascript">
+	/* Hinweis:
+	Es wird eine Dialogbox geöffnet.
+	In dieser Dialogbox steht der Text "Hallo Welt". */
+	alert("Hallo Welt");
+</script>
 {% endhighlight %}
