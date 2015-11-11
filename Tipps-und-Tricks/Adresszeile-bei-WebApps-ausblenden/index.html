@@ -1,0 +1,13 @@
+---
+layout: default
+title: JavaScript online lernen - Tipps & Tricks - Adresszeile bei WebApps ausblenden
+description: JavaScript online lernen - Tipps & Tricks - Adresszeile bei WebApps ausblenden
+---
+<h2>Tipps &amp; Tricks</h2>
+<h3>Adresszeile bei WebApps ausblenden</h3>
+<p>Das folgende Beispiel zeigt, wie man die Adresszeile bei WebApps fürs iPhone beziehungsweise für den iPod touch per JavaScript ausblenden kann.</p>
+{% highlight javascript %}
+if (window.navigator.standalone == false) {
+  window.scrollTo(0, 1);
+}
+{% endhighlight %}
