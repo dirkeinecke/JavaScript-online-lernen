@@ -20,7 +20,7 @@ description: JavaScript online lernen - Erste Schritte in JavaScript
 	</body>
 </html>
 {% endhighlight %}
-<p>Speichern Sie die Datei unter dem Dateinamen "hallo-welt.html" ab und rufen Sie nun die Datei in Ihrem Browser auf (<a href="/beispiele/hallo-welt-1.html" target="_blank">Beispiel</a>). Ausser eine weiße Seite werden Sie aber an dieser Stelle noch nichts zu sehen bekommen. Lassen Sie uns also zum nächsten Schritt gehen.</p>
+<p>Speichern Sie die Datei unter dem Dateinamen "hallo-welt.html" ab und rufen Sie nun die Datei in Ihrem Browser auf (<a href="/Beispiele/hallo-welt-1.html" target="_blank">Beispiel</a>). Ausser eine weiße Seite werden Sie aber an dieser Stelle noch nichts zu sehen bekommen. Lassen Sie uns also zum nächsten Schritt gehen.</p>
 <p>Im zweiten Schritt erweitern wir nun dieses HTML-Grundgerüst mit dem JavaScript-Code, der im Browser ein Dialogfenster mit dem Text "Hallo Welt" anzeigt. Dies ist zwar nicht sonderlich spektakulär, zeigt Ihnen aber sehr anschaulich die Grundprinzipien.</p>
 {% highlight html %}
 <!DOCTYPE html>
@@ -36,8 +36,8 @@ description: JavaScript online lernen - Erste Schritte in JavaScript
 	</body>
 </html>
 {% endhighlight %}
-<p>Speichern Sie die Datei "Hallo-Welt.html" nach Ihren Änderungen wieder und wechseln Sie zum Browser. Hier sollte noch die Datei "Hallo-Welt.html" geöffnet sein. Aktualisieren Sie die Ansicht (<a href="/beispiele/hallo-welt-2.html" target="_blank">Beispiel</a>). Sie sehen nun ein Dialogfenster mit dem Text "Hallo Welt". Je nach Browser kann dieses Fenster immer etwas anders aussehen.</p>
-<p><figure><img src="/beispiele/hallo-welt-2.png" alt="Dialogfenster - Hallo Welt"><figcaption>JavaScript-Dialogfenster (hier im Safari auf einem Mac)</figcaption></figure></p>
+<p>Speichern Sie die Datei "Hallo-Welt.html" nach Ihren Änderungen wieder und wechseln Sie zum Browser. Hier sollte noch die Datei "Hallo-Welt.html" geöffnet sein. Aktualisieren Sie die Ansicht (<a href="/Beispiele/hallo-welt-2.html" target="_blank">Beispiel</a>). Sie sehen nun ein Dialogfenster mit dem Text "Hallo Welt". Je nach Browser kann dieses Fenster immer etwas anders aussehen.</p>
+<p><figure><img src="/Beispiele/hallo-welt-2.png" alt="Dialogfenster - Hallo Welt"><figcaption>JavaScript-Dialogfenster (hier im Safari auf einem Mac)</figcaption></figure></p>
 <p>Nachdem wir nun unser erstes Erfolgserlebnis hatten, wollen wir uns gemeinsam den neu hinzugekommenen Quellcode etwas genauer ansehen.</p>
 <p>Zunächst ist das <code>script</code>-Tag hinzugekommen. Dieses Tag sagt dem Browser, dass nun der Quellcode einer Scriptsprache folgt. Standardmäßig nehmen die meisten Browser an dieser Stelle an, dass es sich um JavaScript handelt. Sicherheitshalber geben wir über das <code>type</code>-Attribut beim Startelement die Sprache mit dem Wert <code>text/javascript</code> explizit an, da man nicht immer davon ausgehen kann, dass JavaScript die Standard-Scriptsprache für das <code>script</code>-Tag gesetzt ist.</p>
 <div class="alert" role="alert">
@@ -57,7 +57,7 @@ alert("Hallo Welt");
 {% endhighlight %}
 <p>Mit dieser Zeile JavaScript-Code sagen Sie dem Computer, dass er ein Dialogfenster öffnen soll (<a href="/Referenz/Objekte/window/alert/"><code>alert()</code></a>) und darin den Text "<code>Hallo Welt</code>" ausgeben soll. <code>alert()</code> ist dabei der Methodenaufruf für die Anzeige eines Dialogfensters. Der Text, der in diesem Dialogfenster angezeigt werden soll, wird als Parameter übergeben. Die Anführungszeichen bei diesem Parameter zeigen in unserem Fall, dass es sich um eine Zeichenkette handelt und sie werden nicht mit ausgegeben. Sie können hier sowohl die doppelten Anführungszeichen (<code>"Hallo Welt"</code>) oder einfache Anführungszeichen (<code>'Hallo Welt'</code>) verwenden.</p>
 <h3>Mehrere Methodenaufrufe hintereinander</h3>
-<p>Innerhalb eines <code>script</code>-Blocks können Sie beliebig viel JavaScript-Code schreiben. Sie sind also nicht auf den Aufruf einer Methode beschränkt. Das folgende <a href="/beispiele/hallo-welt-3.html" target="_blank">Beispiel</a> zeigt Ihnen, wie Sie mehrfach die <code>alert</code>-Methode hintereinander aufrufen können.</p>
+<p>Innerhalb eines <code>script</code>-Blocks können Sie beliebig viel JavaScript-Code schreiben. Sie sind also nicht auf den Aufruf einer Methode beschränkt. Das folgende <a href="/Beispiele/hallo-welt-3.html" target="_blank">Beispiel</a> zeigt Ihnen, wie Sie mehrfach die <code>alert</code>-Methode hintereinander aufrufen können.</p>
 {% highlight html %}
 <script language="JavaScript">
 	alert("Hallo Welt!");
