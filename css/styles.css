@@ -19,6 +19,10 @@ header {
   border-bottom: 1px solid #000;
 }
 
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
 header a {
   text-decoration: none;
   color: #000;
