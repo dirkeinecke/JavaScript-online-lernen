@@ -7,7 +7,7 @@ description: Das folgende Beispiel zeigt, wie man mittels JavaScript Kilometer i
 <p>Das folgende Beispiel zeigt, wie man mittels JavaScript Kilometer in Meilen umrechnen kann.</p>
 {% highlight javascript %}
 function convert_km_to_miles(km, decimal_place) {
-  miles = parseInt(km) * 0.621371;
+  var miles = parseInt(km) * 0.621371;
 
   if (decimal_place != -1) {
     var a = Math.pow(10, decimal_place);
@@ -17,5 +17,5 @@ function convert_km_to_miles(km, decimal_place) {
   return miles;
 }
 
-miles = convert_km_to_miles(100, 2);
+var miles = convert_km_to_miles(100, 2);
 {% endhighlight %}
