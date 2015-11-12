@@ -1,0 +1,23 @@
+---
+title: JavaScript online lernen - Tipps & Tricks - Dateiname bereinigen
+description: JavaScript online lernen - Tipps & Tricks - Dateiname bereinigen
+---
+<h2><a href="/Tipps-und-Tricks/">Tipps &amp; Tricks</a></h2>
+<h3>Dateiname bereinigen</h3>
+<p>Das folgende Beispiel zeigt eine Funktion zum Bereinigen eines Dtainamens.</p>
+{% highlight javascript %}
+function cleanUpFilename(filename) {
+  var newFileName = filename;
+  newFileName = newFileName.replace(new RegExp('[^A-Za-z0-9\\-_.ÄäÖöÜüß ]', 'g'), '');
+  newFileName = newFileName.replace(new RegExp('Ä', 'g'), 'Ae');
+  newFileName = newFileName.replace(new RegExp('ä', 'g'), 'ae');
+  newFileName = newFileName.replace(new RegExp('Ö', 'g'), 'Oe');
+  newFileName = newFileName.replace(new RegExp('ö', 'g'), 'oe');
+  newFileName = newFileName.replace(new RegExp('Ü', 'g'), 'Ue');
+  newFileName = newFileName.replace(new RegExp('ü', 'g'), 'ue');
+  newFileName = newFileName.replace(new RegExp('ß', 'g'), 'ss');
+  newFileName = newFileName.replace(new RegExp(' ', 'g'), '-');
+
+  return newFileName;
+}
+{% endhighlight %}
