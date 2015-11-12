@@ -4,6 +4,6 @@ layout: nil
 
 <ul>
 {% for page in site.pages %}
-  <li>{{ page.url }}</li>
+  <li>{{ page.url | replace: "index.html", "" }}</li>
 {% endfor %}
 </ul>
