@@ -4,6 +4,8 @@ layout: nil
 
 <ul>
 {% for page in site.pages %}
-  <li>{{ site.baseurl }}{{ page.url | replace: "index.html", "" }}</li>
+  {% if page.sitemap != null and page.sitemap != empty %}
+    <li>{{ site.baseurl }}{{ page.url | replace: "index.html", "" }}</li>
+  {% endif %}
 {% endfor %}
 </ul>
