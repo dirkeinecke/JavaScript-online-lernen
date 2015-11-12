@@ -1,4 +1,5 @@
 encoding: utf-8
+timezone: Europe/Berlin
 
 baseurl: "http://www.javascript-online-lernen.de"
 
