@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>iPhone und iPod touch Detection mit JavaScript</title>
+    <script type="text/javascript">
+      function detect_iPhone() {
+        var return_value = false;
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+          return_value = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      if (detect_iPhone() == true) {
+        document.write('Sie verwenden ein iPhone bzw. iPod touch.');
+      } else {
+        document.write('Sie verwenden kein iPhone bzw. iPod touch.');
+      }
+    </script>
+  </body>
+</html>
