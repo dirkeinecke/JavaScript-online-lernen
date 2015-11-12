@@ -1,138 +1,16 @@
 ---
-layout:
+layout: nil
 ---
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>{{ site.baseurl }}</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Erste-Schritte-in-JavaScript/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Referenz/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Referenz/Objekte/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Referenz/Objekte/window/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Referenz/Objekte/window/alert/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Adresszeile-bei-WebApps-ausblenden/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Android-Geraet-mit-JavaScript-erkennen/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Anzahl-der-Elemente-eines-Objekts-ermitteln/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Bilder-vorausladen/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Dateiname-bereinigen/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/iPad-Detection-mit-JavaScript/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/iPhone-und-iPod-touch-Detection-mit-JavaScript/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Kilometer-in-Meilen-umrechnen/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Microsoft-Internet-Explorer-gibt-Wert-des-src-Attributs-bei-Abfrage-des-href-Attributs-bei-Bildern-aus/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Scrollen-beim-Mobile-Webkit-verhindern/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/setTimeout-mit-anonymer-Funktion/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Tastatur-nach-Formulareingabe-bei-WebApps-ausblenden/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Zeichenketten-Strings/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Zeichenketten-Strings/Pruefen-ob-eine-Zeichenkette-mit-einer-bestimmten-Zeichenkette-beginnt/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Zeichenketten-Strings/Pruefen-ob-eine-Zeichenkette-mit-einer-bestimmten-Zeichenkette-endet/</loc>
-		<lastmod>2015-11-11</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
+  {% for page in site.pages %}
+    {% if page.sitemap != null and page.sitemap != empty %}
+      <url>
+		    <loc>{{ site.baseurl }}{{ page.url | replace: "index.html", "" }}</loc>
+		    <lastmod>{{ page.sitemap.lastmod }}</lastmod>
+		    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+		    <priority>{{ page.sitemap.priority }}</priority>
+      </url>
+    {% endif %}
+  {% endfor %}
 </urlset>
