@@ -118,6 +118,12 @@ layout:
 		<priority>1</priority>
 	</url>
 	<url>
+		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Zeichenketten-Strings/</loc>
+		<lastmod>2015-11-11</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
 		<loc>{{ site.baseurl }}/Tipps-und-Tricks/Zeichenketten-Strings/Pruefen-ob-einen-Zeichenkette-mit-einer-bestimmten-Zeichenkette-beginnt/</loc>
 		<lastmod>2015-11-11</lastmod>
 		<changefreq>daily</changefreq>
