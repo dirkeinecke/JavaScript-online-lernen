@@ -1,0 +1,31 @@
+---
+title: JavaScript online lernen - Tipps & Tricks - Microsoft Internet Explorer gibt Wert des "src"-Attributs bei Abfrage des "href"-Attributs bei Bildern aus
+description: JavaScript online lernen - Tipps & Tricks - Microsoft Internet Explorer gibt Wert des "src"-Attributs bei Abfrage des "href"-Attributs bei Bildern aus
+---
+<h2><a href="/Tipps-und-Tricks/">Tipps &amp; Tricks</a></h2>
+<h3>Microsoft Internet Explorer gibt Wert des "src"-Attributs bei Abfrage des "href"-Attributs bei Bildern aus</h3>
+<h4>Testumgebung</h4>
+<ul>
+  <li>Microsoft Windows XP Home Edition Version 2002 Service Pack 3</li>
+  <li>Microsoft Internet Explorer 6</li>
+</ul>
+<h4>Quellcode</h4>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img src="foobar.jpg" id="myImage">
+    <script type="text/javascript">
+      alert(document.getElementById('myImage').href);
+    </script>
+  </body>
+</html>
+{% endhighlight %}
+<h4>Ausgabe in der Alert-Box</h4>
+{% highlight text %}
+http://www.domain.de/foobar.jpg
+{% endhighlight %}
