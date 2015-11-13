@@ -61,7 +61,7 @@ alert("Das ist eine Dialogbox.");
 Für diese Webseite muss JavaScript aktiviert sein.
 {% endhighlight %}
 <p>Die Tags <code>script</code> und <code>noscript</code> sind unbekannt und werden einfach ignoriert. Der Inhalt wird wie ganz normaler Text behandelt.</p>
-<p>Der javaScript-Code sollte in einem solchen Browser natürlich so nicht angezeigt werden. Aus diesem Grund setze man um den eigentlichen JavaScript-Code innerhab des <code>script</code>-Tags HTML-Kommentarzeichen. HTML-Kommentare beginnen mit <code>&lt;!--</code> und enden mit <code>--&gt;</code>. Moderne Browser (die JavaScript interpretieren können), würden sich so aber an dem <code>--&gt;</code> stören. So setze man davor einfach ein JavaScript-Kommentarzeichen (<code>//</code>). Unser oben verwendetes Beispiel sieht dann so aus:</p>
+<p>Der javaScript-Code sollte in einem solchen Browser natürlich so nicht angezeigt werden. Aus diesem Grund setze man um den eigentlichen JavaScript-Code innerhab des <code>script</code>-Tags HTML-Kommentarzeichen. HTML-Kommentare beginnen mit <code>&lt;!--</code> und enden mit <code>--&gt;</code>. Moderne Browser (die JavaScript interpretieren können), würden sich so aber an dem <code>--&gt;</code> stören. So setze man davor einfach ein JavaScript-Kommentarzeichen (<code>//</code>). Das oben verwendetes Beispiel sieht dann so aus:</p>
 {% highlight html %}
 <script type="text/javascript">
 	<!--
@@ -74,3 +74,4 @@ Für diese Webseite muss JavaScript aktiviert sein.
 	<p>Für diese Webseite muss JavaScript aktiviert sein.</p>
 </noscript>
 {% endhighlight %}
+<p>Eine solche Schreibweise/ Syntax sieht der Standard aber nicht vor und sie ist somit falsch. Verwenden Sie diese Schreibweise/ Syntax nicht.</p>
