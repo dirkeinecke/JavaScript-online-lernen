@@ -1,6 +1,6 @@
 ---
-title: JavaScript online lernen - Tipps & Tricks - Tabs innerhalb von pre-Tags ersetzen
-description: JavaScript online lernen - Tipps & Tricks - Tabs innerhalb von pre-Tags ersetzen
+title: JavaScript online lernen - Tipps & Tricks - Tabs innerhalb von pre-Tags durch geschützte Leerzeichen ersetzen
+description: Das folgende Beispiel zeigt, wie man Tabs innerhalb von pre-Tags durch geschützte Leerzeichen ersetzen kann. Als Hilfe wird dazu jQuery verwendet.
 sitemap:
   priority: 1.0
   changefreq: 'daily'
@@ -8,7 +8,7 @@ sitemap:
 ---
 <h2><a href="/Tipps-und-Tricks/">Tipps &amp; Tricks</a></h2>
 <h3>Tabs innerhalb von <code>pre</code>-Tags ersetzen</h3>
-<p>Das folgende Beispiel zeigt, wie man Tabs innerhalb von <code>pre</code>-Tags ersetzen kann. Als Hilfe wird dazu jQuery verwendet.</p>
+<p>Das folgende Beispiel zeigt, wie man Tabs innerhalb von <code>pre</code>-Tags durch geschützte Leerzeichen (<code>&amp;nbsp;</code>) ersetzen kann. Als Hilfe wird dazu jQuery verwendet.</p>
 {% highlight javascript %}
 $('pre').html(function() {
 	return this.innerHTML.replace(/\t/g, '&nbsp;&nbsp;');
