@@ -17,6 +17,12 @@
 			if (window.document.location.search.indexOf('Modal') > -1) {
 				$('body > div.container > header, body > div.container > footer').remove();
 			}
+			
+			$(function() {
+				$('pre').html(function() {
+    					return this.innerHTML.replace(/\t/g, '&nbsp;&nbsp;');
+				});
+			}
 		</script>
 	</body>
 </html>
