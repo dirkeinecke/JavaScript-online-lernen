@@ -11,3 +11,20 @@ sitemap:
 ---
 <h2><a href="/Erste-Schritte-in-JavaScript/">Erste Schritte in JavaScript</a></h2>
 <h3>JavaScript-Bibliotheksdateien</h3>
+<p>Bisher haben wir den JavaScript-Code immer direkt in die HTML-Datei geschrieben. Hier noch einmal zur Erinnerung unser erstes "Hallo-Welt"-Beispiel:</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			alert("Hallo Welt");
+		</script>
+	</body>
+</html>
+{% endhighlight %}
+<p>Wenn Ihr JavaScript-Code aber in Zukunft immer umfangreicher wird, dann kann es mit dieser Methode recht sehr unübersichtlich werden. Auch wenn Sie wiederverwendbare Funktionen (ich werde später genauer auf das Thema <em>Funktionen</em> eingehen) verwenden möchten, dann müssten Sie mit der bisherigen Methode diese Funktionen immer manuell von einer zur nächsten Datei kopieren. Das wäre sehr mühsam und zudem auch noch fehleranfällig.</p>
+<p>JavaScript bietet Ihnen hier die Möglichkeit, den Code in separate Bibliotheksdateien auszulagern. Bei diesen Bibliotheksdateien handelt es sich um einfache Textdateien mit der Dateiendung <em>js</em>.</p>
