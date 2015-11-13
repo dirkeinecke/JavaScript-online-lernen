@@ -28,3 +28,22 @@ sitemap:
 {% endhighlight %}
 <p>Wenn Ihr JavaScript-Code aber in Zukunft immer umfangreicher wird, dann kann es mit dieser Methode recht sehr unübersichtlich werden. Auch wenn Sie wiederverwendbare Funktionen (ich werde später genauer auf das Thema <em>Funktionen</em> eingehen) verwenden möchten, dann müssten Sie mit der bisherigen Methode diese Funktionen immer manuell von einer zur nächsten Datei kopieren. Das wäre sehr mühsam und zudem auch noch fehleranfällig.</p>
 <p>JavaScript bietet Ihnen hier die Möglichkeit, den Code in separate Bibliotheksdateien auszulagern. Bei diesen Bibliotheksdateien handelt es sich um einfache Textdateien mit der Dateiendung <em>js</em>.</p>
+<p>Lassen Sie uns nun gemeinsam das oben gezeigte Beispiel so umbauen, dass der JavaScript-Code nicht mehr direkt in der HTML-Datei steht, sondern in einer Bibliotheksdatei. Erstellen Sie dazu in Ihrem Texteditor eine neue Datei mit folgendem Inhalt:</p>
+{% highlight javascript %}
+alert("Hallo Welt");
+{% endhighlight %}
+<p>Speichern Sie diese Datei unter dem Dateinamen <em>Hallo-Welt.js</em> ab.</p>
+<p>Erstellen Sie nun eine weitere Datei mit folgendem Inhalt:</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="Hallo-Welt.js"></script>
+	</body>
+</html>
+{% endhighlight %}
+<p>Speichern Sie diese Datei unter dem Namen <em>Hallo-Welt-mit-Bibliotheksdatei.html</em> (der Dateiname ist nicht so wichtig und Sie können jeden beliebigen wählen) und öffnen nun diese HTML-Datei in Ihrem Browser (<a href="Beispiele/Hallo-Welt-mit-Bibliotheksdatei-01.html">Beispiel</a>).</p>
