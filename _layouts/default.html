@@ -6,6 +6,9 @@
 			{% include header.html %}
 			<main>
 				{{ content }}
+				 {% if (page.back != null and page.back != empty) or (page.next != null and page.next != empty) %}
+				 	
+				 {% endif %}
 			</main>
 			{% include footer.html %}
 		</div>
