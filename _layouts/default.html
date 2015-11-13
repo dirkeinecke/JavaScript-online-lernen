@@ -14,7 +14,9 @@
 		<script src="//fastcdn.org/Responsive/4.1.1/responsive.min.js"></script>
 		<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 		<script type="text/javascript">
+			console.log(window.document.location.search.indexOf('Modal'));
 			if (window.document.location.search.indexOf('Modal') > -1) {
+				console.log('treffer');
 				$('body > header, body > footer').css('display', 'none');
 			}
 		</script>
