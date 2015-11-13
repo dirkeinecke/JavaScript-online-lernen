@@ -1,0 +1,24 @@
+---
+title: JavaScript online lernen - Tipps & Tricks - Tabs innerhalb von pre-Tags ersetzen
+description: JavaScript online lernen - Tipps & Tricks - Tabs innerhalb von pre-Tags ersetzen
+sitemap:
+  priority: 1.0
+  changefreq: 'daily'
+  lastmod: 2015-11-13
+---
+<h2><a href="/Tipps-und-Tricks/">Tipps &amp; Tricks</a></h2>
+<h3>Tabs innerhalb von <code>pre</code>-Tags ersetzen</h3>
+<p>Das folgende Beispiel zeigt, wie man Tabs innerhalb von <code>pre</code>-Tags ersetzen kann. Als Hilfe wird dazu jQuery verwendet.</p>
+{% highlight javascript %}
+$('pre').html(function() {
+	return this.innerHTML.replace(/\t/g, '&nbsp;&nbsp;');
+});
+{% endhighlight %}
+<p>Diese Änderung sollte man aber immer erst durchführen lassen, wenn das Document Object Model (DOM) bereit ist für die Ausführung von JavaScript. Wie man dies realisieren kann, zeigt das folgende Beispiel.</p>
+{% highlight javascript %}
+$(function() {
+  $('pre').html(function() {
+	  return this.innerHTML.replace(/\t/g, '&nbsp;&nbsp;');
+  });
+});
+{% endhighlight %}
