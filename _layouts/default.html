@@ -6,7 +6,7 @@
 			{% include header.html %}
 			<main>
 				{{ content }}
-				{% if (page.back != null and page.back != empty) or (page.next != null and page.next != empty) %}
+				
 					<div class="row">
 						<div class="col-xxs-12 col-xs-12 col-s-6 col-m-6 col-l-6">
 							{% if page.back != null and page.back != empty %}
@@ -19,7 +19,7 @@
 							{% endif %}
 						</div>
 					</div>
-				{% endif %}
+				
 			</main>
 			{% include footer.html %}
 		</div>
