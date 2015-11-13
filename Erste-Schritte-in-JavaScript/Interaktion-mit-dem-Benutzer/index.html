@@ -1,0 +1,36 @@
+---
+title: JavaScript online lernen - Erste Schritte in JavaScript - Interaktion mit dem Benutzer
+description: JavaScript online lernen - Erste Schritte in JavaScript - Interaktion mit dem Benutzer
+next:
+  path: /Erste-Schritte-in-JavaScript/Kommentare/
+  text: Kommentare
+sitemap:
+  priority: 1.0
+  changefreq: 'daily'
+  lastmod: 2015-11-13
+---
+<h2><a href="/Erste-Schritte-in-JavaScript/">Erste Schritte in JavaScript</a></h2>
+<h3>Interaktion mit dem Benutzer</h3>
+<p>In den bisherigen Beispielen wurde der JavaScript-Code beim Laden der Webseite gleich ausgeführt. Manchmal kann dies so gewollt sein. Oft ist es allerdings so, dass man auf eine Aktion des Benutzers reagieren möchte. Es soll also eine Interaktion zwischen dem Benutzer und der Webseite stattfinden.</p>
+<p>In der Programmiersprache spricht man an dieser Stelle von Ereignissen (Events), die durch den Benutzer ausgelöst werden. Wir werden hier am Anfang unserer Reise durch die JavaScript-Welt zunächst nur die Grundprinzipien dieser "Ereignisse" betrachten und dann später tiefer in dieses Thema einsteigen. Warum? "Ereignisse" machen die Arbeit mit JavaScript spanender, doch die kompette Darstellung dieses komplexen Bereiches würde hier am Anfang zu weit führen.</p>
+<p>Schauen wir uns also einmal an, wie diese Interaktion stattfinden kann. Wie bekommt also unser Script mit, dass der Benutzer zum Beispiel auf die Schaltfläche in einem Formular geklickt hat. Das folgende <a href="/Beispiele/Interaktion-mit-dem-Benutzer-1.html" target="_blank">Beispiel</a> zeigt, wie es funktioniert.</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ereignisse</title>
+	</head>
+	<body>
+		<form>
+			<input type="button" value="Klick mich!" onclick="alert('Hallo Welt')">
+		</form>
+	</body>
+</html>
+{% endhighlight %}
+<p>Wenn Sie diesen Quellcode mit Ihrem Texteditor in eine neue Datei kopieren, diese unter dem Namen "Interaktion-mit-dem-Benutzer-1.html" abspeichern und dann in Ihrem Browser öffnen, dann schaut es nach dem Klick auf die Schaltfläche etwa so aus:</p>
+<p><figure><a href="/Beispiele/Interaktion-mit-dem-Benutzer-1.png" data-modal-title="Ereignisse - Klick auf Schaltfläche öffnet Dialogfenster"><img src="/Beispiele/Interaktion-mit-dem-Benutzer-1.png" alt="Ereignisse - Klick auf Schaltfläche öffnet Dialogfenster"></a></figure></p>
+<p>Schauen wir uns nun den Quelltext näher an. Zunächst haben wir ein <code>form</code>-Tag eingefügt. Dieses ist als umschließendes Tag für das darauf folgende <code>input</code>-Tag obligatorisch. Mit dem <code>input</code>-Tag wird die Schaltfläche erzeugt. Der für uns an dieser Stelle interessante Teil ist das Attribut <code>onclick</code>. Über dieses Attribut legen Sie den Event-Handler fest. Also das, was passieren soll, wenn man auf die Schaltfläche klickt (<code>onclick</code>). Als Wert das Attributs <code>onclick</code> geben Sie den JavaScript-Code an, der ausgeführt werden soll, wenn das Ereignis eintritt. In unserem Fall soll eine Dialogbox mit dem Text <code>Hallo Welt</code> angezeigt werden. Bei HTML-Tags muss der Wert von Attributen immer in Anführungszeichen stehen. Genauso wie bei JavaScript ist es hier egal, ob sie doppelte oder einfache Anführungszeichen verwenden. Da nun aber auch der Text der Dialogbox beim Aufruf der <code>alert</code>-Methode in Anführungszeichen stehen muss, muss man jeweils unterschiedliche Anführungszeichen verwenden. Sonst kann der Browser nicht erkennen, was alles zum Attributwert bzw. zum Text gehört. Sie können also auch die einfachen Anführungszeichen für die Attributwerte und die duppelten Anführungszeichen für den Parameter der <code>alert</code>-Methode nutzen. Das folgende Beispiel zeigt dies.</p>
+{% highlight html %}
+<input type='button' value='Klick mich!' onclick='alert("Hallo Welt")'>
+{% endhighlight %}
