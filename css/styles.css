@@ -50,3 +50,8 @@ footer {
 .modal-overlay :focus {
   outline: transparent;
 }
+
+.alert {
+  background-color: #fff4cc;
+  border-left-color: #ffe070;
+}
