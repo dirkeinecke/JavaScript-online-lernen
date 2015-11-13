@@ -37,3 +37,24 @@ sitemap:
 {% endhighlight %}
 <p>Der Browser stellt dies dann so dar, wie es der folgende Screenshot zeigt.</p>
 <figure><a href="/Beispiele/Kein-JavaScript-im-Browser-verfuegbar-1.png" data-modal-title="JavaScript im Browser deaktiviert"><img src="/Beispiele/Kein-JavaScript-im-Browser-verfuegbar-1.png" alt="JavaScript im Browser deaktiviert"></a></figure>
+<p>Früher waren neben den Browsern, die JavaScript verstehen und interpretieren konnten, auch Browser die dazu nicht in der Lage waren an der Tagesordnung. Heutzutage ist dies (bis auf ganz wenige Ausnahmen) nicht mehr der Fall und man muss auf solche Browser keine spezielle Rücksicht mehr nehmen. Ich möchte aber an dieser Stelle trotzdem kurz beschreiben, was man damals gemacht hat. Denn ab und zu werden Sie im Internet sicher noch entsprechende Beispiele finden und ich möchte, dass Sie verstehen, was dort warum gemacht wurde.</p>
+<p>Es gab also Browser, die mit JavaScript nichts anfangen konnten. Sie kannten die HTML-Tags <code>script</code> und <code>noscript</code> nicht. In HTML werden vom Browser unbekannte Tags einfach übergangen. Der Inhalt zwischen Start- und Endelement wird wie ganz normaler Text dargestellt. Und hier liegt das Problem. Nehmen wir zum Beispiel folgenden Quelltext:</p>
+{% highlight html %}
+<script type="text/javascript">
+	alert("Hallo Welt!");
+	alert("Das ist JavaScript.");
+	alert("Das ist eine Dialogbox.");
+</script>
+<noscript>
+	<p>Für diese Webseite muss JavaScript aktiviert sein.</p>
+</noscript>
+{% endhighlight %}
+<p>Ein moderner Browser würde mit aktiviertem JavaScript drei Dialogboxen hintereinander anzeigen und der Text innerhalb des <code>noscript</code>-Tags wäre nicht nichtbar. Würde man JavaScript deaktiviere, würden der Inhalt des <code>noscript</code>-Tags angezeigt werden.</p>
+<p>Wenn ein Browser mit JavaScript generell nichts anzufangen weiß, dann sieht die Ausgabe unseres Beispiels so aus:</p>
+{% highlight text %}
+	alert("Hallo Welt!");
+	alert("Das ist JavaScript.");
+	alert("Das ist eine Dialogbox.");
+	Für diese Webseite muss JavaScript aktiviert sein.
+{% endhighlight %}
+<p>Die Tags <code>script</code> und <code>noscript</code> sind unbekannt und werden einfach weggelassen. Der Inhalt wird wie ganz normaler Text behandelt.</p>
