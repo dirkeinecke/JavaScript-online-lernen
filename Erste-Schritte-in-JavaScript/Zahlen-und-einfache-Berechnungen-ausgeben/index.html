@@ -1,0 +1,27 @@
+---
+title: JavaScript online lernen - Erste Schritte in JavaScript
+description: JavaScript online lernen - Erste Schritte in JavaScript
+next:
+  path: /Erste-Schritte-in-JavaScript/Interaktion-mit-dem-Benutzer/
+  text: Interaktion mit dem Benutzer
+sitemap:
+  priority: 1.0
+  changefreq: 'daily'
+  lastmod: 2015-11-13
+---
+<h2><a href="/Erste-Schritte-in-JavaScript/">Erste Schritte in JavaScript</a></h2>
+<h3>Zahlen und einfache Berechnungen ausgeben</h3>
+<p>Neben der bisher gezeigten Ausgabe von Zeichenketten kann man mit der <code>alert</code>-Methode auch Zahlen ausgeben. Das folgende Beispiel zeigt die Ausgabe der Zahl 32.</p>
+{% highlight html %}
+<script type="text/javascript">
+	alert(32);
+</script>
+{% endhighlight %}
+<p>Beachten Sie hierbei, dass der Wert des Parameters <strong>nicht</strong> in Anführungszeichen steht. Würden Sie auch hier Anführungszeichen setzen, dann würde <code>32</code> nicht als Zahl sondern als Zeichenkette interpretiert werden. Dies macht bei diesem einfachen Beispiel zwar keinen Unterschied, aber schon beim nächsten Beispiel ist der Unterschied sehr deutlich.</p>
+<p>Der Parameter muss aber nicht zwangsläufig nur aus einer einzelnen Zahl bestehen. Auch Berechnungen sind hier möglich. Das folgende Beispiel zeigt dies.</p>
+{% highlight html %}
+<script type="text/javascript">
+	alert(1 + 2 + 3);
+</script>
+{% endhighlight %}
+<p>Dadurch wird die Berechnung <code>1 + 2 + 3</code> durchgeführt und das Ergebnis <code>6</code> in einem Dialogfenster ausgegeben. Würden Sie hier den Wert des Parameters in Anführungszeichen setzen (so: <code>"1 + 2 + 3"</code>), dann würde nicht die Berechnung durchgeführt werden, sondern es würde die Zeichenkette <code>1 + 2 + 3</code> im Dialogfenster ausgegeben werden.</p>
