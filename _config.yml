@@ -1,7 +1,7 @@
 encoding: utf-8
 timezone: Europe/Berlin
 
-baseurl: "http://www.javascript-online-lernen.de"
+baseurl: http://www.javascript-online-lernen.de
 
 syntax-highlighting:
   enabled : true
@@ -12,5 +12,5 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
-      author: "Dirk Einecke"
+      layout: default
+      author: Dirk Einecke
