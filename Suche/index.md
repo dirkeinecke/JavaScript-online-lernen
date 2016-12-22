@@ -23,6 +23,8 @@ var tipuesearch = {"pages": [
   {"title": "", "text": "", "tags": "", "url": ""}
 ]};
 
+var $j = jQuery.noConflict();
+
 $j(document).ready(function() {
   $j('#tipue_search_input').tipuesearch({
     'mode': 'static',
