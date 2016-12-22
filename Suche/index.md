@@ -17,7 +17,7 @@ var tipuesearch = {"pages": [
     {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" %}
     
     {% else %}
-      {"title": "{{page.title | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
+      {"title": "{{page.title | replace_first: 'JavaScript online lernen - ', '' | markdownify | strip_html | strip_newlines | replace: '"', '\"'}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
     {% endif %}
   {% endfor %}
   {"title": "", "text": "", "tags": "", "url": ""}
