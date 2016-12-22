@@ -7,7 +7,7 @@ sitemap:
   lastmod: 2016-12-22
 ---
 
-## Suchen
+## Suche
 
 <div id="tipue_search_content"></div>
 
@@ -17,7 +17,7 @@ var tipuesearch = {"pages": [
     {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" %}
     
     {% else %}
-      {"title": "{{page.title}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
+      {"title": "{{page.title | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
     {% endif %}
   {% endfor %}
   {"title": "", "text": "", "tags": "", "url": ""}
