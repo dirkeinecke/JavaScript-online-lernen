@@ -37,6 +37,12 @@ header form {
   margin-top: 2rem;
 }
 
+@media (min-width: 768px) {
+  header form {
+    margin-top: 0;
+  }
+}
+
 p {
   line-height: 1.7rem;
 }
