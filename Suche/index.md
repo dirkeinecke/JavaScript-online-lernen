@@ -7,7 +7,7 @@ sitemap:
   lastmod: 2016-12-22
 ---
 
-## Suche
+## Suchen
 
 <div id="tipue_search_content"></div>
 
