@@ -17,7 +17,7 @@ var tipuesearch = {"pages": [
     {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" %}
     
     {% else %}
-      {"title": "{{page.title}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape}}", "tags": "", "url": "{{page.url}}"},
+      {"title": "{{page.title}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | escape}}", "tags": "", "url": "{{page.url}}"},
     {% endif %}
   {% endfor %}
   {"title": "", "text": "", "tags": "", "url": ""}
