@@ -14,7 +14,7 @@ sitemap:
 <script>
 var tipuesearch = {"pages": [
   {% for page in site.pages %}
-    {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" or page.url contains "/sitemap.xml" or page.url contains "/assets/css/style.css" %}
+    {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" or page.url contains "/sitemap.xml" or page.url contains "/assets/css/style.css" or page.url contains "/404.html" %}
     
     {% else %}
       {"title": "{{page.title | replace_first: 'JavaScript online lernen - ', '' | markdownify | strip_html | strip_newlines | replace: '"', '\"'}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
