@@ -13,7 +13,13 @@ sitemap:
 
 <script>
 var tipuesearch = {"pages": [
-
+  {% for page in site.pages %}
+    {% if page.url contains "/Suche/" or page.url contains "/Sitemap/" %}
+    
+    {% else %}
+      {"title": "{{page.title | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "text": "{{page.content | markdownify | strip_html | strip_newlines | xml_escape | replace: '"', '\"'}}", "tags": "", "url": "{{page.url}}"},
+    {% endif %}
+  {% endfor %}
   {"title": "", "text": "", "tags": "", "url": ""}
 ]};
 
