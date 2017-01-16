@@ -6,10 +6,10 @@ layout: nil
   {% for page in site.pages %}
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
-    		<loc>{{ site.baseurl }}{{ page.url | replace: "index.html", "" }}</loc>
-		    <lastmod>{{ page.sitemap.lastmod }}</lastmod>
-		    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-		    <priority>{{ page.sitemap.priority }}</priority>
+	<loc>{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+	<lastmod>{{ page.sitemap.lastmod }}</lastmod>
+	<changefreq>{{ page.sitemap.changefreq }}</changefreq>
+	<priority>{{ page.sitemap.priority }}</priority>
       </url>
     {% endif %}
   {% endfor %}
