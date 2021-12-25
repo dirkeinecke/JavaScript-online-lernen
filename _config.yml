@@ -1,7 +1,7 @@
 encoding: utf-8
 timezone: Europe/Berlin
 
-baseurl: http://www.javascript-online-lernen.de
+baseurl: https://www.javascript-online-lernen.de
 
 syntax-highlighting:
   enabled : true
